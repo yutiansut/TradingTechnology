@@ -1,0 +1,4 @@
+all: ctppriceview
+ctppriceview:
+	g++ -std=c++11 -I. -L. -L/lib64 ctppriceview.cpp -o ctppriceview -lthostmduserapi_se -lncurses -ltinfo
+

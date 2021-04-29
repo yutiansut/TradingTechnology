@@ -1,0 +1,4 @@
+all: ctptradeping
+ctptradeping:
+	g++ -std=c++11 -I. -L. ctptradeping.cpp -o ctptradeping -lthosttraderapi_se
+
