@@ -46,6 +46,7 @@ int main(int argc,char *argv[])
 		std::cout << "example:ctpping tcp://180.168.146.187:10100" << std::endl;
 		return 0;
 	}
+	std::cout << "version:" << CThostFtdcMdApi::GetApiVersion() << std::endl;
 
 	CThostFtdcMdApi* pApi = CThostFtdcMdApi::CreateFtdcMdApi();
 	CMarketSpi Spi(pApi);
